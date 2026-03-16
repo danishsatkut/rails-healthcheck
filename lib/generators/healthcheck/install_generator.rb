@@ -8,7 +8,7 @@ module Healthcheck
     def create_initializer_file
       create_file(
         'config/initializers/healthcheck.rb',
-        <<~HEALTHCHECK_INITIALIZER_TEXT
+        <<-HEALTHCHECK_INITIALIZER_TEXT
           # frozen_string_literal: true
 
           Healthcheck.configure do |config|
